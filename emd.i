@@ -1,5 +1,28 @@
 /**
- * SWIG Python interface description for the EMD implementation.
+ * SWIG Python interface description for Yossi Rubner's EMD implementation.
+ * (Available from http://vision.stanford.edu/~rubner)
+ *
+ * Copyright (c) 2011 Peter Dinges <pdinges@acm.org>
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use, copy,
+ * modify, merge, publish, distribute, sublicense, and/or sell copies
+ * of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  *
  * $Id$
  **/
@@ -60,7 +83,7 @@ float distance_from_callback(feature_t *feature1, feature_t *feature2)
  * Any Python object can be used as features: the EMD implementation treats
  * them as opaque objects and they only serve as arguments to the ground
  * distance function to build the distance matrix.  The weights list, however,
- * must consist only of floating point numbers.
+ * must consist of floating point numbers.
  **/
 %typemap(in) signature_t * {
     int i,j;

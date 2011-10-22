@@ -25,7 +25,7 @@
 /*****************************************************************************/
 /* feature_t SHOULD BE MODIFIED BY THE USER TO REFLECT THE FEATURE TYPE      */
 
-// The implementation treats features as opaque objects.  Their only get used
+// The implementation treats features as opaque objects.  They only get used
 // as arguments to the ground distance callback when building the distance
 // matrix.  Thus, with a Python distance callback, any Python object is fine.
 
