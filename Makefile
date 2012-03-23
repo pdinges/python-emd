@@ -31,7 +31,7 @@ INCLUDES := $(shell python2-config --includes)
 
 CC = cc
 LD = ld
-CFLAGS =
+CFLAGS = -fPIC
 
 all: $(WRAPPERS)
 
